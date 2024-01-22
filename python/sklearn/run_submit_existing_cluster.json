@@ -3,10 +3,10 @@
   "existing_cluster_id": "0122-125436-z1q37596",
   "libraries": [
     { "pypi": { "package": "mlflow" } },
-    { "whl": "dbfs:/tmp/jobs/sklearn_wine/mlflow_sklearn_wine-0.0.1-py3.6.whl" }
+    { "whl": "dbfs:/tmp/natasha.savic@databricks.com/sklearn_wine/mlflow_sklearn_wine-0.0.1-py3-none-any.whl" }
   ],
   "spark_python_task": {
-    "python_file": "dbfs:/home/natasha.savic@databricks.com/work/jobs/sklearn_wine/main.py",
+    "python_file": "dbfs:/tmp/natasha.savic@databricks.com/sklearn_wine/main.py",
     "parameters": [
        "--experiment-name", "/Users/natasha.savic@databricks.com/experiments/sklearn_wine_job",
        "--max-depth", 5,

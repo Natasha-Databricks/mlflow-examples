@@ -170,11 +170,11 @@ python setup.py bdist_wheel
 
 Upload the data file, main file and wheel to your Databricks file system.
 ```
-databricks fs cp wine_quality/main.py dbfs:/tmp/jobs/sklearn_wine/main.py
-databricks fs cp ../../data/train/wine-quality-white.csv dbfs:/tmp/jobs/sklearn_wine/wine-quality-white.csv
+databricks fs cp wine_quality/main.py dbfs:/tmp/natasha.savic@databricks.com/sklearn_wine/main.py
+databricks fs cp ../../data/train/wine-quality-white.csv dbfs:/tmp/natasha.savic@databricks.com/sklearn_wine/wine-quality-white.csv
 databricks fs cp \
   dist/mlflow_sklearn_wine-0.0.1-py3-none-any.whl \
-  dbfs:/tmp/jobs/sklearn_wine/mlflow_wine_quality-0.0.1-py3.6.whl 
+  dbfs:/tmp/natasha.savic@databricks.com/sklearn_wine/mlflow_sklearn_wine-0.0.1-py3-none-any.whl 
 ```
 
 #### Run Submit
@@ -191,7 +191,7 @@ databricks runs submit --json-file run_submit_new_cluster.json
 
 Every time you build a new wheel, you need to upload (as described above) it to DBFS and restart the cluster.
 ```
-databricks clusters restart --cluster-id 1222-015510-grams64
+databricks clusters restart --cluster-id 0122-125436-z1q37596
 ```
 
 Define your run in [run_submit_existing_cluster.json](run_submit_existing_cluster.json) and launch the run.
