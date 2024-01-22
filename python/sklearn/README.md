@@ -181,7 +181,7 @@ databricks fs cp \
 
 ##### Run with new cluster
 
-Define your run in [run_submit_new_cluster.json](run_submit_new_cluster.json) and launch the run.
+Define your run in [run_submit_new_cluster.json](run_submit_new_cluster.json) and launch the run. Make sure the experiment name already exists before, if not, go into Databricks and create the experiment.
 
 ```
 databricks runs submit --json-file run_submit_new_cluster.json

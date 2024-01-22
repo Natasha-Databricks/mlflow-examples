@@ -224,8 +224,8 @@ class Trainer:
 
             # MLflow artifact - plot file
             plot_file = "plot.png"
-            plot_utils.create_plot_file(self.y_test, predictions, plot_file)
-            mlflow.log_artifact(plot_file)
+            # plot_utils.create_plot_file(self.y_test, predictions, plot_file)
+            # mlflow.log_artifact(plot_file)
 
             # Write run ID to file
             if output_path:

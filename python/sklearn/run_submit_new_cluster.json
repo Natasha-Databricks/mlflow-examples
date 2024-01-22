@@ -12,7 +12,7 @@
   "spark_python_task": {
     "python_file": "dbfs:/tmp/natasha.savic@databricks.com/sklearn_wine/main.py",
     "parameters": [
-       "--experiment-name", "/Users/natasha.savic@databricks.com/experiments/sklearn_wine_job",
+       "--experiment-name", "/Users/natasha.savic@databricks.com/sklearn_wine_job",
        "--max-depth", 5,
        "--data-path", "https://raw.githubusercontent.com/mlflow/mlflow/master/examples/sklearn_elasticnet_wine/wine-quality.csv",
        "--run-origin", "run_submit_new_cluster_whl" ]
