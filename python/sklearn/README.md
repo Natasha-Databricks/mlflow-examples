@@ -27,7 +27,7 @@
 ```
 python -m venv mlflow-examples-sklearn
 source mlflow-examples-sklearn/bin/activate
-cd python
+cd python/sklearn
 pip install -e .
 ```
 
