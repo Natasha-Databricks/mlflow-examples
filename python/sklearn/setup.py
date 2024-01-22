@@ -18,6 +18,7 @@ setup(
         "pyspark==3.3.1",
         "shortuuid",
         "pytest",
-        "pytest-ordering" "wheel",
+        "pytest-ordering",
+        "wheel",
     ],
 )
