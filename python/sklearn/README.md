@@ -170,8 +170,8 @@ python setup.py bdist_wheel
 
 Upload the data file, main file and wheel to your Databricks file system.
 ```
-databricks fs cp wine_quality/main_train.py dbfs:/tmp/jobs/sklearn_wine/main.py
-databricks fs cp data/train/wine-quality-white.csv dbfs:/tmp/jobs/sklearn_wine/wine-quality-white.csv
+databricks fs cp wine_quality/main.py dbfs:/tmp/jobs/sklearn_wine/main.py
+databricks fs cp ../../data/train/wine-quality-white.csv dbfs:/tmp/jobs/sklearn_wine/wine-quality-white.csv
 databricks fs cp \
   dist/mlflow_sklearn_wine-0.0.1-py3-none-any.whl \
   dbfs:/tmp/jobs/sklearn_wine/mlflow_wine_quality-0.0.1-py3.6.whl 
