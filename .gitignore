@@ -1,1 +1,5 @@
-mlflow-examples-sklearn/*
+mlflow-examples-sklearn/
+python/sklearn/mlflow_sklearn_wine.egg-info/
+python/sklearn/wine_quality/mlruns/
+python/sklearn/wine_quality/__pycache__
+python/sklearn/wine_quality/plot.png
