@@ -10,7 +10,7 @@ import time
 import pandas as pd
 import numpy as np
 import click
-import shortuuid
+#import shortuuid
 
 import sklearn
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -94,7 +94,7 @@ class Trainer():
             mlflow.set_tag("data_path", self.data_path)
             mlflow.set_tag("registered_model_name", registered_model_name)
             mlflow.set_tag("registered_model_version_stage", registered_model_version_stage)
-            mlflow.set_tag("uuid",shortuuid.uuid())
+            #mlflow.set_tag("uuid",shortuuid.uuid())
             mlflow.set_tag("dataset", "wine-quality")
             mlflow.set_tag("run_origin", self.run_origin)
             mlflow.set_tag("timestamp", now)

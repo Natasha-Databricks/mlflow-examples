@@ -27,6 +27,7 @@
 ```
 python -m venv mlflow-examples-sklearn
 source mlflow-examples-sklearn/bin/activate
+cd python
 pip install -e .
 ```
 
@@ -121,14 +122,14 @@ Note that the `mlflow` CLI run ignores the `mlflow.set_experiment()` so you must
 ```
 mlflow run . \
   -P max-depth=2 -P max-leaf-nodes=32 -P run-origin=localRun \
-  --experiment-name=sklearn_wine
+  --experiment-name=sklearn_wine --env-manager=local
 ```
 
 #### mlflow run github
 ```
 mlflow run https://github.com/amesar/mlflow-examples.git#python/sklearn \
   -P max-depth=2 -P max-leaf-nodes=32 -P run-origin=gitRun \
-  --experiment-name=sklearn_wine
+  --experiment-name=sklearn_wine --env-manager=local
 ```
 
 #### mlflow run Databricks remote
@@ -145,11 +146,11 @@ export MLFLOW_TRACKING_URI=databricks
 The token and tracking server URL are picked up from your Databricks CLI `~/.databrickscfg` default profile.
 
 ```
-mlflow run https://github.com/amesar/mlflow-examples.git#python/sklearn \
+mlflow run https://github.com/Natasha-Databricks/mlflow-examples.git#python/sklearn \
   -P max-depth=2 -P max-leaf-nodes=32 -P run-origin=gitRun \
   -P data-path=https://raw.githubusercontent.com/mlflow/mlflow/master/examples/sklearn_elasticnet_wine/wine-quality.csv \
-  --experiment-name=/Users/me@mycompany.com/sklearn_wine \
-  --backend databricks --backend-config mlflow_run_cluster.json
+  --experiment-name=/Users/natasha.savic@databricks.com/sklearn_wine \
+  --backend databricks --backend-config mlflow_run_cluster.json --env-manager=local
 ```
 
 

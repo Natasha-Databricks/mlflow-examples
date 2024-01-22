@@ -18,4 +18,5 @@ setup(name='mlflow-sklearn-wine',
           "shortuuid",
           "pytest",
           "pytest-ordering"
+          "wheel"
     ])
